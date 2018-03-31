@@ -1,0 +1,45 @@
+1.break-sonlandirici kimi istifade olunur.Continue-davam etdirmek meqsedile istifade olunur.Switch funksiyasi ile istifade olunmur,loop'larda isledildikde verilen sert daxilinde hemin serti yerine yetirerek,yeni oturerek davam edir.
+2.Istifade oluna bilmez,cunki this method daxilinde islendikde yalniz mueyyen bir mesafeni teyin edir ve hemin method o mesafeye,yeni obyekte gore islenir.Static method daxilinde islene bilmemesi,static members class'larla isleyir,obyektlerle yox.
+3.String ve string ifade etdiyi mena baximindan eynidir.Ferqlilikleri istifade yerleridir.String basqa bir sinifde islenen method cagirmaq ucun,string ise deyisen cagirmaq ucun istifade olunur.
+string place = "world";
+string greet = String.Format("Hello {0}!", place);
+6.class Shape {
+      public void setWidth(int w) {
+         width = w;
+      }
+      public void setHeight(int h) {
+         height = h;
+      }
+      protected int width;
+      protected int height;
+   }
+
+   class Rectangle: Shape
+ {
+      public int getArea() { 
+         return (width * height); 
+      }
+   }
+7.bir metoda birden cox deyer tanitma.
+class Program
+    {
+        static int ortalama(int reqem1,int reqem2)
+        {
+            int netice = (reqem1 + reqem2) / 2;
+            return netice;
+        }
+ 
+        static int ortalama(int reqem1, int reqem2,int reqem3)
+        {
+            int netice = (reqem1 + reqem2+reqem3) / 2;
+            return netice;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(ortalama(13, 5));
+            Console.WriteLine(ortalama(13, 8, 7));
+            Console.ReadKey();
+        }
+    }
+8.her ikisi deyeri tanitma isini gorur.Ancaq variable tekce deyer tanidir,property ise deyeri metod icerisinde tanidir,hem oxutma,hem de yazma isini gorur.
+10.Gonderdiyim tapsiriqdan bildiniz mence((
